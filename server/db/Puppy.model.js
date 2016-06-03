@@ -13,7 +13,9 @@ var PuppySchema = new Schema({
   },
 
   // User info
-  // Notice that user data only accepts boolean type
+  // Note that it accpets data as String, not Boolean
+  // This is because while most of data comes as "true" or "false,"
+  //  it also accepts other cases. e.g.) "Default" or "Don't Mind"
   isUserAllergic: {
     allergic: String,
     weight: Number
